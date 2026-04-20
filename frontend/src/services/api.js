@@ -12,11 +12,6 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
-api.interceptors.request.use((config) => {
-  console.log('REQUEST:', config.url, config.params);
-  return config;
-});
-
 // Tự động logout khi token hết hạn
 api.interceptors.response.use(
   (res) => res,
